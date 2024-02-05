@@ -1,8 +1,8 @@
-class tarefaController {
+class TarefaController {
     static rotas(app){
         // Rota para o recurso tarefa
-        app.get('/tarefa', tarefaController.listar)
-        app.post('/tarefa', tarefaController.inserir)
+        app.get('/tarefa', TarefaController.listar)
+        app.post('/tarefa', TarefaController.inserir)
     }
 
     static listar(req, res){
@@ -14,4 +14,4 @@ class tarefaController {
     }
 }
 
-module.exports = tarefaController
+module.exports = TarefaController

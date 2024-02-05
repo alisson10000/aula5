@@ -1,17 +1,10 @@
-const { Console } = require('console')
 const Express = require('express')
-
 const app = Express()
-
-
-const tarefaController = require('./src/controllers/tarefaController')
-const usuarioController = require('./src/controllers/usuarioController')
-
+const port = 3200
+const tarefaController = require('./src/controllers/TarefaController')
+const usuarioController = require('./src/controllers/UsuarioController')
 usuarioController.rotas(app)
 tarefaController.rotas(app)
-
-app.listen(3200, function () {
-
-
-    console.log("OK")
+app.listen(port, function () {
+    console.log(` servidor rodando em localhost:${port}/usuario ` )
 })

@@ -1,9 +1,9 @@
 
-class usuarioController {
+class UsuarioController {
     static rotas(app){
         // Rota para o recurso usuario
-        app.get('/usuario', usuarioController.listar)
-        app.post('/usuario', usuarioController.inserir)
+        app.get('/usuario', UsuarioController.listar)
+        app.post('/usuario', UsuarioController.inserir)
     }
 
     static listar(req, res){
@@ -15,4 +15,4 @@ class usuarioController {
     }
 }
 
-module.exports = usuarioController
+module.exports = UsuarioController
